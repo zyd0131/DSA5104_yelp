@@ -2,7 +2,7 @@ from pymysql import connect
 from pymysql.cursors import DictCursor # 为了返回字典形式
 from settings import *
 
-class User(object):
+class MySQL(object):
     def __init__(self):  # 创建对象同时要执行的代码
         self.conn = connect(
             host=MYSQL_HOST,
